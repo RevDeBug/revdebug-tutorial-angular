@@ -1,0 +1,1 @@
+{"version":3,"sources":["src/app/hero.ts"],"names":["Hero","id","name"],"mappings":"yWAAA,OAAO,UAAUA,IAAV,CAAe;AACpBC,EAAAA,EAAE,EAAE,MAAF;AACFC,EAAAA,IAAI,EAAE,MAAF,CAFgB,C","sourcesContent":["export interface Hero {\n  id: number;\n  name: string;\n}\n"]}

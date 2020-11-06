@@ -1,0 +1,13 @@
+{
+    "solution":    "example-angular-heroes",
+    "application": "Angular Heroes Example",
+    "type":        "module",
+    "runtime":     "inject",
+    "mode":        "live",
+    "sourceMap":   true,
+    "path":        "src",
+    "files":       "**/*.{js,ts}",
+    "index":       "index.html",
+    "postPath":    "dist",
+    "postFiles":   "*.js"
+}
