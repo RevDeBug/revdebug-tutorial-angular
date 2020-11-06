@@ -15,8 +15,8 @@
  */
 
 /***************************************************************************************************
-     * BROWSER POLYFILLS
-     */
+ * BROWSER POLYFILLS
+ */
 
 /** IE10 and IE11 requires the following for NgClass support on SVG elements */
 // import 'classlist.js';  // Run `npm install --save classlist.js`.
@@ -55,13 +55,10 @@
  */
 
 /***************************************************************************************************
-     * Zone JS is required by default for Angular itself.
-     */
+ * Zone JS is required by default for Angular itself.
+ */
 import 'zone.js/dist/zone'; // Included with Angular CLI.
 
 /***************************************************************************************************
  * APPLICATION IMPORTS
- */declare var __RevDeBug: any; /*tslint:disable*/const __revD14 = __RevDeBug.init("example-angular-heroes", "Angular Heroes Example", "0.0.0", "c=V6XOPb6Cg5bDXOd<a7WNWOXJXFhO", "0000000000000000", "127.0.0.1", 42735, 3, 2, 512, 2, 113, ";7", "f55", "#5", "4v1&x*R2JB4g~4t@SQ+4%.y;0jGKPq:7", 0, "polyfills.ts");__revD14.es.push(__revD14.e);__revD14.a(0, __revD14.e = 113);__revD14.v(114);__revD14.e = __revD14.es.pop();
-
-
-//# sourceMappingURL=polyfills.ts.map
+ */
