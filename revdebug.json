@@ -7,7 +7,7 @@
     "sourceMap":   true,
     "path":        "src",
     "files":       "**/*.{js,ts}",
-    "index":       "index.html",
+    "index":       "src/index.html",
     "postPath":    "dist",
     "postFiles":   "*.js"
 }
