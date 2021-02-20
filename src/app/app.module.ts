@@ -13,7 +13,7 @@ import { AppRoutingModule } from './app-routing.module';
 class MyErrorHandler implements ErrorHandler {  // This necessary to catch unhandled exceptions
   handleError(error) {
     console.error(error);
-    revdebug.unhandled(error);
+    revdebug.exception(error);
   }
 }
 
