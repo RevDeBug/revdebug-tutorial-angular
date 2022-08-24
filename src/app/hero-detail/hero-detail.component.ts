@@ -33,4 +33,11 @@ export class HeroDetailComponent implements OnInit {
     throw new Error('Oops...');
     this.location.back();
   }
+
+  goFetch(): void {
+    fetch("/404").then(
+      (r) => console.log('fetch resp:', r, r.text().then((r) => console.log(r))),
+      (e) => console.dir(e, {depth: null})
+  );
+  }
 }

@@ -1,8 +1,8 @@
-Simple Angular example, after running select a hero and click the "CRASH" button to crash. This example demonstrates injecting the RevDeBug runtime directly into an index.html file.
+Simple Angular example, after running select a hero and click the "CRASH" button to crash or "CRASH FETCH" to crash with recording in the apm.
 
 \* Note: Before compiling you may need to change the "host" and "port" fields in "revdebug.json" or specify different values on the command line if you are not running the record server locally.
 
-Assuming instructions were followed from the main "revdebug" Javascript git README and RevDeBug is avaliable either globally::
+Assuming instructions were followed from the official revdebug.com documentation and RevDeBug is avaliable either globally::
 
     npm install
     npm link @revdebug/revdebug
