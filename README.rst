@@ -4,12 +4,14 @@ Simple Angular example, after running select a hero and click the "CRASH" button
 
 Assuming instructions were followed from the official revdebug.com documentation and RevDeBug is avaliable either globally::
 
+    npm config set @revdebug:registry https://nexus.revdebug.com/repository/npm/
     npm install
     npm link @revdebug/revdebug
     npx revd
 
 Or installing as a local package::
 
+    npm config set @revdebug:registry https://nexus.revdebug.com/repository/npm/
     npm install
     npm install @revdebug/revdebug
     npx revd
