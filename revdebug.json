@@ -1,6 +1,6 @@
 {
     "host": 	   "revdebug.server.address",
-    "port":        "42734",
+    "port":        42734,
     "apm":         true,
     "screen":      true,
     "screenTime":  10,
@@ -16,5 +16,6 @@
     "entrySpan":   "single",
     "useFMP":      true,
     "postPath":    "dist",
-    "postFiles":   "*.js"
+    "postFiles":   "*.js",
+    "framework":   "angular"
 }
