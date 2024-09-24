@@ -1,0 +1,74 @@
+/* Styling for the table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table th {
+  background-color: rgb(85, 134, 134);
+  color: white;
+}
+
+/* Styling for the header */
+h2 {
+  color: rgb(0, 0, 0);
+  margin-top: 80px;
+}
+
+/* Flexbox for input elements */
+.input-container {
+/* display: flex; */
+   /* justify-content: flex-end; */
+  margin-bottom: 20px; /* Spacing below the input fields */
+}
+
+.table-input{
+  display: flex;
+}
+
+/* Styling for buttons */
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.red-button {
+  background-color: red; /* Red background */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Padding around the text */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition */
+  /* margin: 15px; */
+  font-size: 1.25rem;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.red-button:hover {
+  background-color: darkred; /* Darker red on hover */
+}
+
+label {
+  margin: 10px;
+  
+  font-size: 1.25rem;
+}
+
+.input-group {
+  margin-right: 20px; /* Margin between input groups */
+  
+}
+
+
+input, select {
+  font-size: 1.25rem;
+  width: 7rem;
+}
+
