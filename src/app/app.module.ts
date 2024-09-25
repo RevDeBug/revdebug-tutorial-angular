@@ -1,36 +1,23 @@
-import { NgModule, ErrorHandler } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
+import { AppComponent } from './app.component';
+import { LayoutModule } from './layout/layout.module'; 
+import { appRoutes } from './app.routes'; 
+import { InvoicesModule } from './invoices/invoices.module';
 import { FormsModule } from '@angular/forms';
 
-import { AppComponent } from './app.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { HeroDetailComponent } from './hero-detail/hero-detail.component';
-import { HeroesComponent } from './heroes/heroes.component';
-import { MessagesComponent } from './messages/messages.component';
-
-import { AppRoutingModule } from './app-routing.module';
-
-class MyErrorHandler implements ErrorHandler {  // This necessary to catch unhandled exceptions
-  handleError(error) {
-    console.error(error);
-    revdebug.exception(error);
-  }
-}
 
 @NgModule({
-  providers: [{provide: ErrorHandler, useClass: MyErrorHandler}],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    RouterModule.forRoot(appRoutes),
+    LayoutModule, 
+    InvoicesModule
   ],
-  declarations: [
-    AppComponent,
-    DashboardComponent,
-    HeroesComponent,
-    HeroDetailComponent,
-    MessagesComponent
-  ],
-  bootstrap: [ AppComponent ]
+  providers: [],
+  bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

@@ -1,0 +1,22 @@
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .Logo {
+    margin-top: 200px;
+    margin-bottom: 50px;
+  }
+  
+  .link {
+    color: red; 
+    text-decoration: none; 
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
+  p {
+    margin: 20px;
+    font-size: 1.5rem;
+  }

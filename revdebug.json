@@ -1,21 +1,20 @@
 {
-    "host": 	   "revdebug.server.address",
-    "port":        42734,
-    "apm":         true,
-    "screen":      true,
-    "screenTime":  10,
-    "solution":    "example-angular-heroes",
-    "application": "Angular Heroes Example",
-    "type":        "module",
-    "mode":        "onevent",
-    "sourceMap":   true,
-    "path":        "src",
-    "files":       "**/*.{js,ts}",
-    "index":       "src/index.html",
-    "target":      "web",
-    "entrySpan":   "single",
-    "useFMP":      true,
-    "postPath":    "dist",
-    "postFiles":   "*.js",
-    "framework":   "angular"
+    "host": "revdebug.server",                   //    The server host where RevDeBug will connect.
+    "secure": true,                              //    Whether to use a secure HTTPS connection.
+    "port": 42734,                               //    The port to connect to the host.
+    "apm": true,                                 //    Enables Application Performance Monitoring (APM) to track app performance.
+    "screen": true,                              //    Enables screen recording of application usage.
+    "screenTime": 10,                            //    Sets the maximum duration (in seconds) for screen recording.
+    "solution": "Angular-RevDeBug-Application",  //    The name of the solution or project.
+    "application":"Angular-RevDeBug-Application",//    The name of the specific application being monitored.
+    "type": "module",                            //    Defines the project type, 'module' indicates it's part of a larger system.
+    "mode": "onevent",                           //    Specifies that RevDeBug should record only on specific events.
+    "sourceMap": true,                           //    Enables the use of source maps for easier debugging by mapping minified code to original.
+    "path": "src",                               //    Sets the base path where the source files are located.
+    "index": "src/index.html",                   //    Specifies the main HTML file to be modified for RevDeBug injection.
+    "files": "**/*.{js,ts}",                     //    Defines the files to be instrumented for RevDeBug (all JS and TS files in 'src').
+    "target": "web",                             //    The target environment for the project (web-based).
+    "entrySpan": "multi",                        //    Specifies multiple entry spans to capture performance metrics.
+    "useFMP": true,                              //    Enables capturing First Meaningful Paint (FMP) for performance analysis.
+    "framework": "angular"                       //    Indicates that the project is built using the Angular framework.
 }
