@@ -88,23 +88,23 @@ RevDeBug allows you to monitor requests sent from the frontend and visualize the
 
 1. Open the application in your browser:  
    Navigate to [http://localhost:4200/](http://localhost:4200/).  
-   ![Navigation Example](./readme/1.jpg)
+   ![Navigation Example](./public/1.jpg)
    
 2. Click on **Invoices Tutorial** in the navigation bar.  
-   ![Invoices Tutorial Example](./readme/2.jpg)
+   ![Invoices Tutorial Example](./public/2.jpg)
 
 3. Click the **Send** button to trigger the request.  
-   ![Send Button Example](./readme/3.jpg)
+   ![Send Button Example](./public/3.jpg)
 
 4. Now, go to your **RevDeBug server** and navigate to `/apm/trace`. After a few seconds, the fetch request failure will appear in the trace.  
-   ![APM Trace Example](./readme/4.jpg)
+   ![APM Trace Example](./public/4.jpg)
    
 
 5. By clicking on the specific trace node for the failed request, you can inspect further details.  
-   ![Trace Node Example](./readme/5.jpg)
+   ![Trace Node Example](./public/5.jpg)
 
 6. From the trace node, you can access the **error recording** for this specific failure, where you can replay the user action and inspect the exact cause of the error.  
-   ![Error Recording Example](./readme/6.jpg)
+   ![Error Recording Example](./public/6.jpg)
 
 This trace visualization allows you to track the flow of requests, analyze failures, and pinpoint the root cause of the problem efficiently.
 
@@ -115,19 +115,19 @@ In the RevDeBug server, you can inspect the recording to trace the steps taken b
 #### Steps to Reproduce:
 
 1. While remaining on the **Invoices Tutorial** page, set the input to a value greater than 10 and change the select to either **Proforma** or **Recurring**.  
-   ![Input and Select Example](./readme/c1.jpg)
+   ![Input and Select Example](./public/c1.jpg)
 
 2. Click the **Calculate** button to trigger the calculation and send the request.
 
 3. Now, navigate to your **RevDeBug server** and go to `/apm/monitor`. Click on **Applications**.  
-   ![APM Monitor Example](./readme/c2.jpg)
+   ![APM Monitor Example](./public/c2.jpg)
 
 4. On the **Applications** page, you will see a table of exceptions with every error that occurred in the application and was captured. Click on a selected error to view its recording.  
-   ![Exceptions Table Example](./readme/c3.jpg)
+   ![Exceptions Table Example](./public/c3.jpg)
 
 5. You can now review the stack trace for the occurrence of the error and watch the recording of user actions on the page that led to the error.  
-   ![Stack Trace Example](./readme/c4.jpg)  
-   ![User Actions Recording Example](./readme/c5.jpg)
+   ![Stack Trace Example](./public/c4.jpg)  
+   ![User Actions Recording Example](./public/c5.jpg)
 
 ## Benefits of Using RevDeBug
 
