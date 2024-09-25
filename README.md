@@ -28,20 +28,15 @@ npm config set @revdebug:registry https://nexus.revdebug.com/repository/npm/
 2. Install dependencies:
 ```bash
 npm install
-npm link @revdebug/revdebug
-```
-Alternatively, to install RevDeBug as a local package:
-
-```bash
-npm install
 npm install @revdebug/revdebug
 ```
+
 ### RevDeBug Configuration
-. You can specify the host directly in the Dockerfile using the build argument REVDEBUG_SERVER_HOSTNAME, or you can also change the host in the revdebug.json configuration file, as shown below:
+You need to set the RevDeBug server host in the configuration, which can be changed in the revdebug.json configuration file, as shown below:
 
 ```json
 {
-    "host": "revdebug.server",              //    The server host where RevDeBug will connect.
+    "host": "revdebug.server",                   //    The server host where RevDeBug will connect.
     "secure": true,                              //    Whether to use a secure HTTPS connection.
     "port": 42734,                               //    The port to connect to the host.
     "apm": true,                                 //    Enables Application Performance Monitoring (APM) to track app performance.
@@ -78,9 +73,11 @@ Navigate to `http://localhost:4200/`.
 ## Running with Docker
 To run the Angular application using Docker, follow these steps:
 
+For more information on how to configure RevDeBug, see the [RevDeBug Configuration](#revdebug-configuration) section.
+
 Build the Docker image:
 ```bash
-docker build --build-arg REVDEBUG_SERVER_HOSTNAME=<your_revdebug_hostname> -t angular-revdebug-demo-app .
+docker-compose build
 ```
 Run the Docker container:
 ```bash

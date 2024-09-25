@@ -72,3 +72,18 @@ input, select {
   width: 7rem;
 }
 
+.status-message {
+  margin-top: 20px; /* Space above the status message */
+  font-size: 1.2rem; /* Font size */
+  color: green; /* Green text for success */
+}
+
+/* Optional: Add color for error messages */
+.status-message.error {
+  color: red; /* Red text for errors */
+}
+#statusMessage {
+  margin-top: 20px;
+  font-weight: bold;
+  color: green; /* Change color based on your preference */
+}
