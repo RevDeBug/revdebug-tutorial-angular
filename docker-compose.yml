@@ -8,5 +8,3 @@ services:
         REVDEBUG_SERVER_HOSTNAME :  ${REVDEBUG_SERVER_HOSTNAME:-}
     ports:
       - "8080:8080"
-    # volumes:
-    #   - .:/app

@@ -88,6 +88,10 @@ docker-compose up
 ```
 Access the application: Open your browser and navigate to http://localhost:8080/.
 
+## Connect code repository
+Follow the “connect to repository” option and fill the “Repository address” to github repository location of https://github.com/RevDeBug/revdebug-tutorial-angular and press “Save”.
+![Connecting the repository](./public/repo.jpg)
+
 ## Demonstrating Errors in the Application
 
 The demo application includes pages with intentionally introduced bugs to show how RevDeBug captures errors and traces them.
