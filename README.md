@@ -15,7 +15,7 @@ The demo includes a sample Angular application configured with intentional error
 ### Prerequisites
 Ensure you have the following installed on your machine:
 
-- Node.js (version 14 or higher)
+- Node.js (version 18 or higher)
 - Angular CLI
 - RevDeBug npm module (globally or locally installed)
 
@@ -37,7 +37,7 @@ npm install
 npm install @revdebug/revdebug
 ```
 ### RevDeBug Configuration
-The only required configuration is setting the appropriate RevDeBug server host, as shown in the example below:
+. You can specify the host directly in the Dockerfile using the build argument REVDEBUG_SERVER_HOSTNAME, or you can also change the host in the revdebug.json configuration file, as shown below:
 
 ```json
 {
@@ -75,6 +75,18 @@ ng serve
 ```
 Navigate to `http://localhost:4200/`. 
 
+## Running with Docker
+To run the Angular application using Docker, follow these steps:
+
+Build the Docker image:
+```bash
+docker build --build-arg REVDEBUG_SERVER_HOSTNAME=<your_revdebug_hostname> -t angular-revdebug-demo-app .
+```
+Run the Docker container:
+```bash
+docker-compose up
+```
+Access the application: Open your browser and navigate to http://localhost:8080/.
 
 ## Demonstrating Errors in the Application
 
