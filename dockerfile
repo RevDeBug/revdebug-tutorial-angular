@@ -15,7 +15,7 @@ COPY . .
 
 ARG REVDEBUG_SERVER_HOSTNAME
 
-RUN npx revd --host $REVDEBUG_SERVER_HOSTNAME
+RUN npx revd
 
 # Zbuduj aplikację Angular (tworzy katalog dist/nazwa-aplikacji)
 RUN npm run build --prod
