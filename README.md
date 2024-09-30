@@ -20,6 +20,11 @@ Ensure you have the following installed on your machine:
 - RevDeBug npm module (globally or locally installed)
 
 ### Installation Steps
+#### Clone the project
+Go to the directory where you want to clone the repository:
+```sh
+git clone https://github.com/RevDeBug/revdebug-tutorial-react-js
+```
 1.  Set up the RevDeBug npm registry:
 
 ```bash
