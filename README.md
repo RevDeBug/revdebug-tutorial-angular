@@ -2,6 +2,11 @@
 
 This project is a demo of how to integrate and use RevDeBug in an Angular application to monitor user actions, record application performance, and trace errors.
 
+## Clone the project
+Go to the directory where you want to clone the repository:
+```bash
+git clone https://github.com/RevDeBug/revdebug-tutorial-angular
+```
 ## Overview
 RevDeBug is a powerful tool that allows you to:
 
